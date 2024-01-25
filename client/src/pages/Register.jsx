@@ -27,6 +27,10 @@ const Register = () => {
     }
   };
 
+
+
+
+
   return (
     <div className="auth">
       <h1>Register</h1>

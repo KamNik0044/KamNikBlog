@@ -34,7 +34,7 @@ const Register = () => {
   return (
     <div className="auth">
       <h1>Register</h1>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           required
           type="text"
@@ -56,8 +56,8 @@ const Register = () => {
           name="password"
           onChange={handleChange}
         />
-        <button onClick={handleSubmit}>Register</button>
-        {err && <p>{err}</p>}
+        <button type="submit">Register</button>
+        {err && <p>{err.message}</p>}
         <span>
           Do you have an account? <Link to="/login">Login</Link>
         </span>
